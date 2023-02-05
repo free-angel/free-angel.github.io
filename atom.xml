@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://free-angel.github.io</id>
+    <title>虹猫猫的博客</title>
+    <updated>2023-02-05T06:50:56.051Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://free-angel.github.io"/>
+    <link rel="self" href="https://free-angel.github.io/atom.xml"/>
+    <subtitle>每天进步一点点，分享每一份进步</subtitle>
+    <logo>https://free-angel.github.io/images/avatar.png</logo>
+    <icon>https://free-angel.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2023, 虹猫猫的博客</rights>
+    <entry>
+        <title type="html"><![CDATA[自定义你想要的博客主题模板]]></title>
+        <id>https://free-angel.github.io/CYPFG8Ckl/</id>
+        <link href="https://free-angel.github.io/CYPFG8Ckl/">
+        </link>
+        <updated>2023-02-05T03:13:58.000Z</updated>
+        <content type="html"><![CDATA[<p>使用博客模板：https://github.com/xiangyi715/Gridea-Chic-Unique</p>
+<p>评论系统代码失效，js代码失效部分：<br>
+打开head.js，将valine的地址改成https://unpkg.com/valine@1.4.4/dist/Valine.min.js。</p>
+<p><a href="https://iyichen.xyz/2022/01/hexo-leancloud-valine-access-fail/">leancloud域名失效解决方案</a><br>
+必须要添加serverURLs。<br>
+在gridea中，可以添加一个选项：<br>
+打开模板中的config.json，添加<br>
+{<br>
+&quot;name&quot;: &quot;serverURLs&quot;,<br>
+&quot;label&quot;: &quot;serverURLs&quot;,<br>
+&quot;group&quot;: &quot;评论&quot;,<br>
+&quot;value&quot;: &quot;&quot;,<br>
+&quot;type&quot;: &quot;input&quot;,<br>
+&quot;note&quot;: &quot;serverURLs&quot;<br>
+}<br>
+在gridea会多出来一个选择项<br>
+<img src="https://free-angel.github.io/post-images/1675569720636.png" alt="" loading="lazy"></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[如何使用一个后端评论管理系统]]></title>
+        <id>https://free-angel.github.io/MLBHJLQaM/</id>
+        <link href="https://free-angel.github.io/MLBHJLQaM/">
+        </link>
+        <updated>2023-02-04T14:23:39.000Z</updated>
+        <content type="html"><![CDATA[<p>Valine 诞生于2017年8月7日，是一款基于LeanCloud的快速、简洁且高效的无后端评论系统。<br>
+相信这对于很多不想自己搭建评论系统后台的人而言，是很有诱惑力的。网友能够直接评论，不需要使用第三方账号授权登录。国内大部分的评论系统都是在评论之前要使用第三方社交账号授权登录才行。这样一来反而打消了很多人在网页上发表评论的热情，把简单的事情弄复杂了。valine正好就符合了我的需求，首先它很简单就可以引入到网页中，然后评论不需要第三方授权登录，并且不需要搭建自己的后台接口来处理评论。</p>
+<p>配置leancloud<br>
+因为valine的评论数据是存储在leancloud中的。所以首先去leancloud注册账号。搞定之后创建一个应用，选择开发版就行，这样就是免费使用了。具体步骤：</p>
+<ol>
+<li>创建应用</li>
+<li>然后在控制台的当前应用中，点击储存-&gt;存储化数据，在里面点击“创建class”，分别创建“Comment”和“Counter”这两个class。这两个class是作为存储评论数据使用，后期就是在这里可以看到所有的评论数据，并且可以进行评论数据的管理。</li>
+<li>最后要在安全中心里面设置“Web 安全域名”为自己的网站域名，这样一来就只接受来自自己网站的评论数据请求，保障了评论数据的安全。</li>
+</ol>
+<p>如何来管理这个评论系统呢？<a href="https://github.com/DesertsP/Valine-Admin">valine admin</a>是基于valine和leancloud做的一个评论管理系统。可以实现评论邮件通知、评论管理、垃圾评论过滤等功能。</p>
+<p>几个注意事项：</p>
+<ol>
+<li>涉及到qq邮箱的smtp协议的开通，即smtp_pass这个变量的值。注意不是qq密码。<br>
+<img src="https://free-angel.github.io/post-images/1675566520603.png" alt="smtp服务" loading="lazy"></li>
+<li>云部署这一块，改完任何自定义变量以后，都要重新部署以后才会生效。</li>
+</ol>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[使用chatGPT为你排忧解难]]></title>
+        <id>https://free-angel.github.io/N-PmbVops/</id>
+        <link href="https://free-angel.github.io/N-PmbVops/">
+        </link>
+        <updated>2023-02-04T04:22:15.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="chatgpt的安装">chatGPT的安装</h3>
+<p>用谷歌账号去官网注册一个账号，需要一个国外的电话号码接收验证码，可以到<a href="https://smsnator.online/">接码平台</a>领取一个。</p>
+<p>登录https://chat.openai.com/chat/，就可以愉快地玩耍了。</p>
+<h3 id="chatgpt的使用">chatGPT的使用</h3>
+<ul>
+<li>
+<p>技术问题：一些技术性的问题，它会按点回答。就像将一篇文章总结好了，让你少费时费力。<br>
+<img src="https://free-angel.github.io/post-images/1675485355589.png" alt="git创建开源项目" loading="lazy"></p>
+</li>
+<li>
+<p>写总结：<br>
+<img src="https://free-angel.github.io/post-images/1675485933499.png" alt="写一篇500字的软件工程师年终总结" loading="lazy"></p>
+</li>
+<li>
+<p>自动生成摘要：提取要点，减少脑力。利用 ChatGPT 生成文章的摘要，以减少您的工作量。<br>
+使用python可以自动提取链接中的关键要点。这需要调用openai的接口，可以去官网获得一个api_key。<br>
+<img src="https://free-angel.github.io/post-images/1675486606585.png" alt="提取链接文本要点" loading="lazy"></p>
+</li>
+</ul>
+<p>此外还有</p>
+<ul>
+<li>文本生成：使用 ChatGPT 生成特定主题的文章。写一篇关于儿童教育的文章1000字</li>
+<li>文本翻译：通过在不同语言之间生成文本，使用 ChatGPT 进行翻译。</li>
+<li>语法检查：使用 ChatGPT 进行语法检查，纠正文章中的语法错误。</li>
+<li>回答问题：使用 ChatGPT 回答问题，并生成相关的文字。</li>
+</ul>
+<p>如果想在项目中使用chatGPT的服务，可以调用chatGPT的接口。在github上有一个项目chatgpt_wrapper或许可以帮助到你。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[关于gridea主题的选择和配置]]></title>
+        <id>https://free-angel.github.io/Mk9bsRFCN/</id>
+        <link href="https://free-angel.github.io/Mk9bsRFCN/">
+        </link>
+        <updated>2023-02-03T12:38:31.000Z</updated>
+        <content type="html"><![CDATA[<p>gridea主题的选择：</p>
+<p>gridea的配置：添加更多的链接。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[常见的git命令]]></title>
+        <id>https://free-angel.github.io/XRyn4SyL1/</id>
+        <link href="https://free-angel.github.io/XRyn4SyL1/">
+        </link>
+        <updated>2023-02-03T12:37:24.000Z</updated>
+        <summary type="html"><![CDATA[<p>了解git的作用，掌握常用的几个命令。掌握这个工具后，可以参与到开源项目的学习和创作。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>了解git的作用，掌握常用的几个命令。掌握这个工具后，可以参与到开源项目的学习和创作。</p>
+<!-- more -->
+<p>廖雪峰老师的官网教程：https://www.liaoxuefeng.com/wiki/896043488029600。通俗易懂，同时也很深刻。</p>
+<p>git作为一个强大的多版本管理系统，意味着您可以执行以下操作：</p>
+<ol>
+<li>任意上下文切换。创建一个分支来尝试一个想法，提交几次，切换回你分支的地方，应用补丁，切换回你正在试验的地方，然后合并它。</li>
+<li>基于角色的代码线。有一个分支始终只包含用于生产的分支，另一个分支用于将工作合并到其中进行测试，还有几个较小的分支用于日常工作。</li>
+<li>基于特征的工作流程。为您正在处理的每个新功能创建新分支，以便您可以在它们之间无缝地来回切换，然后在该功能合并到您的主线时删除每个分支。</li>
+<li>一次性实验。创建一个分支进行试验，意识到它不会起作用，然后删除它——放弃工作——没有其他人看到它（即使你同时推送了其他分支）。</li>
+</ol>
+<p><a href="https://git-scm.com/docs">官网</a>的一些常见指令介绍：</p>
+<ul>
+<li>git clone 克隆一个远程库到本地</li>
+<li>git commit 修改本地库提交</li>
+<li>git push 更新远程库</li>
+<li>git pull 更新本地库</li>
+<li>git fetch 从另一个存储库下载对象</li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[引入bilibili视频]]></title>
+        <id>https://free-angel.github.io/STfZ4TWn-/</id>
+        <link href="https://free-angel.github.io/STfZ4TWn-/">
+        </link>
+        <updated>2023-02-03T11:14:45.000Z</updated>
+        <content type="html"><![CDATA[<script src="https://unpkg.com/dplayer/dist/DPlayer.min.js" />
+<script src="https://unpkg.com/react/dist/react.min.js" />
+<script src="https://unpkg.com/react-dom/dist/react-dom.min.js" />
+<script src="https://unpkg.com/react-dplayer/dist/react-dplayer.min.js" />
+<div id="example"></div>
+<script >
+ReactDOM.render(React.createElement(
+   'div',
+    { style: { width: 800, margin: '0px auto' } },
+    React.createElement(ReactDPlayer, {options:{video: {url: 'http://static.smartisanos.cn/common/video/t1-ui.mp4'} }})
+), document.getElementById('example'));
+</script>
+<div style="position: relative; padding: 30% 45%;">
+    <iframe style="
+        position: absolute; 
+        width: 100%; 
+        height: 100%; 
+        left: 0; top: 0;" 
+        src="//player.bilibili.com/player.html?aid=633622827&bvid=BV1fb4y187r9&cid=424484231&page=1&high_quality=1" 
+        scrolling="no" 
+        border="0" 
+        frameborder="no" 
+        framespacing="0" 
+        allowfullscreen="true">
+    </iframe>
+</div>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[如何简单快速地搭建属于自己的博客]]></title>
+        <id>https://free-angel.github.io/如何搭建个人博客系统/</id>
+        <link href="https://free-angel.github.io/如何搭建个人博客系统/">
+        </link>
+        <updated>2023-02-03T06:54:46.000Z</updated>
+        <summary type="html"><![CDATA[<p>有一个自己的博客是一件快乐的事，但是搭建一个博客是复杂的。大部分人的要求只是想专注于写写自己的生活感悟，至于如何发布等技术问题不在乎。下面介绍一个简单的方法搭建属于自己的博客，让更多的人加入博客这个队伍中来。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>有一个自己的博客是一件快乐的事，但是搭建一个博客是复杂的。大部分人的要求只是想专注于写写自己的生活感悟，至于如何发布等技术问题不在乎。下面介绍一个简单的方法搭建属于自己的博客，让更多的人加入博客这个队伍中来。</p>
+<!-- more -->
+<p>如果要一步步地搭建自己的博客，流程是这样的。</p>
+<figure data-type="image" tabindex="1"><img src="https://free-angel.github.io/post-images/1675409037234.png" alt="chatGPT的回答" loading="lazy"></figure>
+<p>chatGPT回答了使用WordPress等博客平台来搭建。虽然WordPress是免费的，定期升级更新即可。但是建站需要买域名，主机服务器，云主机空间等。对于个人写写博客，当然没有必要。我们可以使用github提供的服务器，域名，主机空间。这是使用google搭建博客的基本步骤：</p>
+<figure data-type="image" tabindex="2"><img src="https://free-angel.github.io/post-images/1675409280240.png" alt="使用google page搭建博客" loading="lazy"></figure>
+<p>github page的使用方法：https://pages.github.com/。虽然不需要任何费用，但是对于不懂前端的人来说，还是有点复杂。为了让更多的人加入博客大军，在github上面有一个开源的项目gridea，功能类似WordPress等平台。你只负责写文字，排下版就行，像页面的主题、静态网页生成等都不需要你去做。生成的静态网络可以一键同步到github上面去。</p>
+<p>在<a href="https://gridea.dev/">官方网站</a>有详细的介绍。此外可以在<a href="https://github.com/getgridea/gridea">github主页</a>关注作者的最新发布。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hello Gridea]]></title>
+        <id>https://free-angel.github.io/hello-gridea/</id>
+        <link href="https://free-angel.github.io/hello-gridea/">
+        </link>
+        <updated>2018-12-11T16:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+<!-- more -->
+<p><a href="https://github.com/getgridea/gridea">Github</a><br>
+<a href="https://gridea.dev/">Gridea 主页</a><br>
+<a href="https://fehey.com/">示例网站</a></p>
+<h2 id="特性">特性👇</h2>
+<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
+<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
+<p>🏷️  你可以对文章进行标签分组</p>
+<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
+<p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
+<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
+<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
+<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
+<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
+<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
+<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
+<p>未来，它一定会成为你离不开的伙伴</p>
+<p>尽情发挥你的才华吧！</p>
+<p>😘 Enjoy~</p>
+]]></content>
+    </entry>
+</feed>
